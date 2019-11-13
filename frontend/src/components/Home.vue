@@ -17,7 +17,6 @@
 import Menu from "./Menu";
 
 export default {
-    name:'home',
     components:{
         Menu
     }

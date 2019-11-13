@@ -38,7 +38,6 @@
 
 <script>
     export default {
-        name: 'menu'
     }
 </script>
 
