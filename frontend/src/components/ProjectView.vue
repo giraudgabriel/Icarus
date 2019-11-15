@@ -1,6 +1,7 @@
 <template>
     <div>
-        <div class="container">
+        <Menu/>
+        <div class="container" id="main">
             <div class="text-left">
                 <router-link to="/projetos"><button class="btn btn-light"> <i class="fa fa-arrow-left"> </i>
                         Voltar</button> </router-link>
@@ -15,8 +16,12 @@
 </template>
 
 <script>
+    import Menu from './Menu'
     export default {
         props: ["projeto"],
+        components:{
+            Menu
+        },
         data() {
             return {
 
@@ -25,6 +30,6 @@
     }
 </script>
 
-<style scoped>
+<style>
 
 </style>

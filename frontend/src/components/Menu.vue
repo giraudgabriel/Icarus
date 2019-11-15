@@ -3,13 +3,19 @@
         <div>
 
             <b-navbar toggleable="lg" type="dark" fixed="top" variant="info">
-                <b-navbar-brand href="#"><img class="logo" src="../assets/logo.png" alt=""></b-navbar-brand>
+                <b-navbar-brand href="#">
+                    <router-link to="/">
+                        <img class="logo" src="../assets/logo.png" alt="">
+                    </router-link>
+                </b-navbar-brand>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav>
-                        <b-nav-item href="#"> <i class="fa fa-building"></i> Projetos</b-nav-item>
+                        <b-nav-item href="#">
+                            <router-link id="nolink" to="/projetos"><i class="fa fa-building"></i> Projetos</router-link>
+                        </b-nav-item>
                         <b-nav-item href="#"> <i class="fa fa-info"></i> Sobre nós</b-nav-item>
                     </b-navbar-nav>
 
@@ -17,18 +23,14 @@
 
                         <b-nav-item-dropdown right>
                             <template v-slot:button-content>
-                               <i class="fa fa-globe"></i> Idioma
+                                <i class="fa fa-globe"></i> Idioma
                             </template>
                             <b-dropdown-item href="#">PT-BR</b-dropdown-item>
                         </b-nav-item-dropdown>
+                        <b-nav-item>
+                            <router-link to="/login" id="nolink"><i class="fa fa-user"></i> Entrar</router-link>
+                        </b-nav-item>
 
-                        <b-nav-item-dropdown right>
-                            <template v-slot:button-content>
-                               <i class="fa fa-user"></i> Entrar
-                            </template>
-                            <b-dropdown-item href="#"><i class="fa fa-list"></i> Perfil</b-dropdown-item>
-                            <b-dropdown-item href="#"><i class="fa fa-power-off"></i> Sair</b-dropdown-item>
-                        </b-nav-item-dropdown>
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>
@@ -37,8 +39,7 @@
 </template>
 
 <script>
-    export default {
-    }
+    export default {}
 </script>
 
 <style coped>

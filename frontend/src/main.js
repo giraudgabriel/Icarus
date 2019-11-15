@@ -3,6 +3,7 @@ import App from './App.vue'
 import ProjectList from './components/ProjectList.vue'
 import ProjectView from './components/ProjectView.vue'
 import Home from './components/Home.vue'
+import Login from './components/Login.vue'
 import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -17,6 +18,10 @@ const router = new VueRouter({
   routes: [{
       path: '/projetos',
       component: ProjectList
+    },
+    {
+      path:'/login',
+      component: Login
     },
     {
       path: '/projetos/:projeto',

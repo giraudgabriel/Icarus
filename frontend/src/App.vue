@@ -19,4 +19,11 @@
     color: #2c3e50;
     margin-top: 60px;
   }
+  #main{
+    padding-top:70px;
+  }
+  #nolink{
+    text-decoration:none; 
+    color:inherit;
+  }
 </style>
