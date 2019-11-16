@@ -2,7 +2,7 @@
     <div>
         <div>
 
-            <b-navbar toggleable="lg" type="dark" fixed="top" variant="info">
+            <b-navbar class="bg-menu " toggleable="lg" type="dark" fixed="top" variant="info">
                 <b-navbar-brand href="#">
                     <router-link to="/">
                         <img class="logo" src="../assets/logo.png" alt="">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <Menu />
-        <div id="main">
+        <div>
             <div class="container">
                 <h3>Projetos</h3>
                 <ProjectModal />

@@ -1,7 +1,7 @@
 <template>
     <div>
         <Menu></Menu>
-        <div class="row" id="main">
+        <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col-md">

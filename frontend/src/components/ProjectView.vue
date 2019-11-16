@@ -1,7 +1,7 @@
 <template>
     <div>
         <Menu/>
-        <div class="container" id="main">
+        <div class="container">
             <div class="text-left">
                 <router-link to="/projetos"><button class="btn btn-light"> <i class="fa fa-arrow-left"> </i>
                         Voltar</button> </router-link>
