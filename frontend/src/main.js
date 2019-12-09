@@ -5,6 +5,8 @@ import ProjectView from './components/ProjectView.vue'
 import Home from './components/Home.vue'
 import Login from './components/Login.vue'
 import Main from './components/Main.vue'
+import CreateTodo from './components/CreateTodo.vue'
+import ListTodo from "./components/ListTodo.vue"
 import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -20,21 +22,29 @@ const router = new VueRouter({
       component: ProjectList
     },
     {
-      path:'/login',
+      path: '/login',
       component: Login
     },
     {
-      path:'/main',
-      component:Main
+      path: '/main',
+      component: Main
     },
     {
       path: '/projetos/:projeto',
       component: ProjectView,
-      props:true
+      props: true
     },
     {
       path: '/',
       component: Home
+    },
+    {
+      path: '/todos',
+      component: ListTodo
+    },
+    {
+      path: '/todo',
+      component: CreateTodo
     }
   ]
 })
